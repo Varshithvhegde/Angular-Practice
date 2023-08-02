@@ -29,25 +29,25 @@ export class AppComponent {
   //   console.log(value);
   // }
 
-  // pokemons : Pokemon[]=[{
-  //   id:1,
-  //   name:"Pikachu",
-  //   type :"Eletric",
-  //   isCool :false,
-  //   isStylish : true
-  // },{
-  //   id:2,
-  //   name : "IceEdge",
-  //   type :"Ice",
-  //   isCool : true,
-  //   isStylish : false
-  // },{
-  //   id:3,
-  //   name:"Eeve",
-  //   type :"Normal",
-  //   isCool :true,
-  //   isStylish : true
-  // }]
+  pokemons : Pokemon[]=[{
+    id:1,
+    name:"Pikachu",
+    type :"Eletric",
+    isCool :false,
+    isStylish : true
+  },{
+    id:2,
+    name : "IceEdge",
+    type :"Ice",
+    isCool : true,
+    isStylish : false
+  },{
+    id:3,
+    name:"Eeve",
+    type :"Normal",
+    isCool :true,
+    isStylish : true
+  }]
 
   handleChange(event : any){
     this.pokemonName = event.target.value;
