@@ -9,6 +9,10 @@
     <input type="radio" name ="isCool" [value]="false" [(ngModel)]="pokemon.isCool" (ngModelChange)="toggleIsCool($event)"/>
     Pokemon is Not Cool
   </label>
+  <br>
+  <label>
+    <input type="checkbox" name="acceptTerms" [(ngModel)]="pokemon.acceptTerms"/>Accept Terms & Conditions
+  </label>
 </form>
 
 MODEL : {{pokemon|json}}
