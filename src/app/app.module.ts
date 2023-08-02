@@ -4,6 +4,7 @@ import {FormsModule} from "@angular/forms";
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PokemonBaseModule } from './pokemon-base/pokemon-base.module';
+import { PokemonService } from './services/pokemon.service';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,9 @@ import { PokemonBaseModule } from './pokemon-base/pokemon-base.module';
     FormsModule,
     PokemonBaseModule
   ],
-  providers: [],
+  providers: [
+    PokemonService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

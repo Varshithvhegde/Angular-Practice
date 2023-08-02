@@ -1,7 +1,7 @@
 <p>pokemon-list works!</p>
 
 <div *ngFor="let pokemon of pokemons">
-    <app-pokemon-detail [detail]="pokemon"></app-pokemon-detail>
+    <app-pokemon-detail [detail]="pokemon" (remove)="handleRemove($event)"></app-pokemon-detail>
   </div>
 <!-- <table>
   <thead>
