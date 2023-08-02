@@ -1,1 +1,22 @@
 <p>pokemon-list works!</p>
+
+<div *ngFor="let pokemon of pokemons">
+    <app-pokemon-detail [detail]="pokemon"></app-pokemon-detail>
+  </div>
+<!-- <table>
+  <thead>
+    <th>Index</th>
+    <th>Name</th>
+    <th>Type</th>
+  </thead>
+  <tbody>
+    <tr
+      *ngFor="let pokemon of pokemons; let i = index"
+      [class.cool-bool]="pokemon.isCool"
+    >
+      <td>{{ pokemon.id }}</td>
+      <td>{{ pokemon.name }}</td>
+      <td>{{ pokemon.type }}</td>
+    </tr>
+  </tbody>
+</table> -->
