@@ -27,13 +27,13 @@
     </tbody>
 </table> -->
 
-<input type="text" [value]="pokemonName" (input)="handleChange($event)"/>
+<!-- <input type="text" [value]="pokemonName" (input)="handleChange($event)"/> -->
 <!-- <p>{{pokemonName}}</p> -->
 <!-- 
 <div *ngIf="!pokemonName">
     No Search Resut Found....
 </div> -->
-<ng-container *ngIf="pokemonName.length;then pokemonlist ; else nopokemon"></ng-container>
+<!-- <ng-container *ngIf="pokemonName.length;then pokemonlist ; else nopokemon"></ng-container>
 
 <ng-template #pokemonlist>
     <h1>All Pokemons Available</h1>
@@ -44,4 +44,7 @@
 
 <ng-template #nopokemon>
     <h1>No Pokemons Available</h1>
-</ng-template>
+</ng-template> -->
+
+
+<app-pokemon-list></app-pokemon-list>
