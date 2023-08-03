@@ -25,6 +25,12 @@ export class PokemonTemplateFormComponent implements OnInit {
     console.log('====================================');
     // this.pokemon.isCool = !this.pokemon.isCool;
   }
+
+  handleSubmit(object : any){
+    console.log('====================================');
+    console.log(object.form.value);
+    console.log('====================================');
+  }
   ngOnInit() {
     this.pokemonService.getPokemon(1).subscribe((data : Pokemon)=>{
       this.pokemon = data;
