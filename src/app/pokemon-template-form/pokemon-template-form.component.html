@@ -1,6 +1,7 @@
 <form #form="ngForm">
   Pokemon Name : 
-  <input type="text" [(ngModel)]="pokemon.name" name="name"/>
+  <input type="text" [(ngModel)]="pokemon.name" name="name" #pokemonName="ngModel"/>
+  <div *ngIf="pokemonName.touched">Invalid</div>
   <label>
     <input type="radio" name="isCool" [value]="true" [(ngModel)]="pokemon.isCool"/>
     Pokemon is Cool
@@ -10,9 +11,19 @@
     Pokemon is Not Cool
   </label>
   <br>
+
+
+
+
   <label>
     <input type="checkbox" name="acceptTerms" [(ngModel)]="pokemon.acceptTerms"/>Accept Terms & Conditions
   </label>
+
+  <select name="pokemonType" [(ngModel)]="pokemon.type">
+    <option *ngFor="let type of pokemonType" [ngValue]="type.value">{{ type.value }}</option>
+  </select>
+  
+
 </form>
 
 MODEL : {{pokemon|json}}
